@@ -153,3 +153,93 @@ body {
     /*opacity: 1;*/
 
 }
+
+.seller-block-3 {
+    height: 200px;
+    background-color: #242830;
+}
+
+.seller-block-3 button {
+    margin-top: 65px;
+    color: #ffffff;
+    background-color: #242830;
+    height: 75px;
+    width: 295px;
+}
+
+.team-block {
+    margin-top: 90px;
+    color: #000000;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.team-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: stretch;
+    margin-left: 230px;
+}
+
+.network-block{
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.team-networks {
+    list-style: none;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 145px;
+    margin-top: 40px;
+}
+
+.team-person .about {
+    width: 360px;
+    height: 60px;
+}
+
+.network{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    line-height: 500px;
+    text-align: center;
+    background: #383a40;
+}
+
+.subscribe-block {
+    background-image: url("../img/Layer 226.jpg");
+    height: 450px;
+}
+
+.subscribe-block h3 {
+    padding-top: 230px;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.subscribe-block input {
+    height: 65px;
+    border: #ffffff solid 1px;
+    width: 355px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px 5px 5px 5px;
+
+}
+
+.subscribe-block button {
+    background-color: #3dc9b3;
+    width: 100px;
+    height: 67px;
+    border: 0;
+    color: #ffffff;
+
+}
