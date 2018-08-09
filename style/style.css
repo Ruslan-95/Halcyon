@@ -24,7 +24,7 @@ body {
     height: 800px;
 }
 
-.main-block-text {
+.main-block__text {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -73,7 +73,7 @@ body {
     padding-bottom: 90px;
 }
 
-.information-block-2 .title {
+.information-block-2__title {
     padding-bottom: 90px;
 }
 
@@ -92,7 +92,7 @@ body {
 
 }
 
-.block2-list {
+.information-block-2__block2-list {
     display: flex;
     justify-content: space-between;
     margin-left: 10%;
@@ -105,7 +105,7 @@ body {
     width: 100%;
 }
 
-.block3-image .img{
+.information-block-3__item-img{
     width: 815px;
 }
 
@@ -115,7 +115,7 @@ body {
     margin-top: 130px;
 }
 
-.carousel-title {
+.carousel-block__title {
     padding-bottom: 100px;
 }
 
