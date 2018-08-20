@@ -71,11 +71,7 @@ body {
     border-radius: 10px
 }
 
-.menu {
-    width: 100%;
-}
-
-.navigation {
+.menu-block {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -87,7 +83,7 @@ body {
     justify-content: flex-end;
 }
 
-.menu__hamburger-svg {
+.menu-block__hamburger-svg {
     background-color: transparent;
     border: none;
     margin: 100px 100px 0 0;
@@ -462,7 +458,7 @@ body {
     margin: 65px 0 0 0;
 }
 
-.team-block__person {
+.team-block__item {
     width: 375px;
     padding: 0 15px 0 15px;
 }
@@ -518,7 +514,7 @@ body {
     cursor: pointer;
 }
 
-.team-block__person-img {
+.team-block__avatar {
     margin: 0;
 }
 
@@ -727,7 +723,7 @@ body {
         max-width: 690px;
         height: 100%;
     }
-    .menu__hamburger-svg{
+    .menu-block__hamburger-svg{
         margin-right: 0;
     }
 }
