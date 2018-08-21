@@ -27,7 +27,7 @@ body {
     margin: 0;
 }
 
-.main-block__text {
+.main-halcyon {
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -36,7 +36,7 @@ body {
     align-items: center;
 }
 
-.text__title {
+.main-halcyon__paragraph {
     font-size: 40px;
     padding-top: 250px;
     margin: 0 auto;
@@ -44,7 +44,7 @@ body {
     color: #000000;
 }
 
-.text__title--opacity {
+.main-halcyon__title-opacity {
     opacity: 0.4;
 }
 
@@ -121,7 +121,7 @@ body {
     margin: 0;
 }
 
-.advantages-list__line {
+.team-block__line {
     width: 33px;
     height: 3px;
     background-color: #3dc9b3;
@@ -134,7 +134,7 @@ body {
     margin: 0;
 }
 
-.information-block__arrow {
+.arrow {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -153,30 +153,11 @@ body {
     height: 15px;
 }
 
-.arrow__points {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 555px;
-    position: absolute;
-}
-
-.dote__left,
-.dote__right {
-    width: 230px;
-}
-
-.dote {
-    position: relative;
-    bottom: 12px;
-    height: 2px;
-    width: 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
+.arrow__svg::after {
+    content: "";
+    background-image: radial-gradient(#bbb 25%, transparent 25%);
+    background-size: 6px 6px;
+    background-repeat-y: no-repeat;
 }
 
 .information-block-1__paragraph {
@@ -184,7 +165,7 @@ body {
     margin: 65px 0 0 0;
 }
 
-.paragraph__bold {
+.information-block-1__paragraph-bold {
     font-weight: bold;
     color: #000000;
 }
@@ -255,7 +236,7 @@ body {
     max-width: 815px;
 }
 
-.carousel {
+.carousel-block {
     overflow: hidden;
     width: 758px;
     height: 700px;
@@ -268,6 +249,8 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    max-width: 457px;
+    padding: 0 15px 0 15px;
 }
 
 .seller-block-2__figure {
@@ -314,11 +297,6 @@ body {
     color: #000000;
 }
 
-.carousel__block {
-    max-width: 457px;
-    padding: 0 15px 0 15px;
-}
-
 .carousel-block__paragraph:first-child {
     margin-top: 45px;
 }
@@ -352,7 +330,7 @@ body {
     cursor: pointer;
 }
 
-.seller-block-1__paragraph--select {
+.seller-block-1__paragraph-select {
     font-style: italic;
     font-weight: bold;
 }
@@ -526,7 +504,7 @@ body {
     margin: 0;
 }
 
-.person__name-line {
+.name-line {
     margin-top: 15px;
     margin-bottom: 30px;
 }
@@ -575,12 +553,13 @@ body {
     margin: 112px 0 25px 0;
 }
 
-.subscribe__more-btn {
+.subscribe-more-btn__svg {
     margin-top: 115px;
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .contacts {
