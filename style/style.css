@@ -490,6 +490,12 @@ h1, h3, h4, h5 {
     background-color: #242830;
 }
 
+.network-icon:hover {
+    background-color: #3dc9b3;
+    transition: all 0.7s;
+    transform: rotate(360deg);
+}
+
 .network-icon--browser {
     background: url("../img/browser.png") #242830 no-repeat center;
 }
