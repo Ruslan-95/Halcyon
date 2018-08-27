@@ -2,22 +2,22 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="style/normalize.css" rel="stylesheet" type="text/css">
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <title>halcyon</title>
 </head>
 <body>
-
 <div class="wrapper">
 
     <section class="main-block">
-        <nav class="menu-block">
+        <menu class="menu-block">
             <div class="menu-block__hamburger">
                 <button class="menu-block__hamburger-btn">
                 </button>
             </div>
-        </nav>
+        </menu>
         <div class="main-halcyon">
             <h1 class="main-halcyon__title">halcyon<span class="main-halcyon__title-opacity">days</span></h1>
             <p class="main-halcyon__paragraph">An exclusive html5/css3 freebie by Peter Finlan, for <span
@@ -46,7 +46,7 @@
         </div>
         <ul class="information-block-2__list advantages-list">
             <li class="advantages-list__item">
-                <img src="img/round-laptop.png" alt="image">
+                <img class="advantages-list__img" src="img/round-laptop.png" alt="image">
                 <h4 class="advantages-list__title">digital design //</h4>
                 <hr class="advantages-list__line name-line">
                 <p class="advantages-list__paragraph">lorem ipsum dolor sit amet, consectetur adipiscing elit. sed a
@@ -56,7 +56,7 @@
                     primis in faucibus.</p>
             </li>
             <li class="advantages-list__item">
-                <img src="img/round-tag.png" alt="image">
+                <img class="advantages-list__img" src="img/round-tag.png" alt="image">
                 <h4 class="advantages-list__title">web development //</h4>
                 <hr class="advantages-list__line name-line">
                 <p class="advantages-list__paragraph">lorem ipsum dolor sit amet, consectetur adipiscing elit. sed a
@@ -66,7 +66,7 @@
                     primis in faucibus.</p>
             </li>
             <li class="advantages-list__item">
-                <img src="img/round-heart.png" alt="image">
+                <img class="advantages-list__img" src="img/round-heart.png" alt="image">
                 <h4 class="advantages-list__title">we love you //</h4>
                 <hr class="advantages-list__line name-line">
                 <p class="advantages-list__paragraph">lorem ipsum dolor sit amet, consectetur adipiscing elit. sed a
@@ -117,7 +117,7 @@
     </section>
 
     <section class="seller-block-2">
-        <ul class="seller-block-2 seller-block-2__list">
+        <ul class="seller-block-2__list">
             <li class="seller-block-2__carousel-item">
                 <a class="seller-block-2__link" href="#0">
                     <figure class="seller-block-2__figure">
@@ -236,7 +236,6 @@
                         </ul>
                     </div>
                 </li>
-
             </ul>
         </div>
     </section>
@@ -245,7 +244,8 @@
         <span class="subscribe__aeroplane"></span>
         <h2 class="subscribe__title">subscribe to stay in the loop</h2>
         <div class="subscribe__submit">
-            <input class="subscribe__input" type="text">
+            <label for="subscribe__input" class="visually_hidden">Подписка на обновления</label>
+            <input id="subscribe__input" class="subscribe__input" type="text">
             <button class="subscribe__btn">send</button>
         </div>
         <button class="subscribe-more-btn">
@@ -263,19 +263,21 @@
                     <span class="contacts-block__icon icon-address">
                     </span>
                     <p class="contacts-block__connect">address</p>
-                    <p class="contacts-block__connect-dop">level 6, 23 ptt st, sydney</p>
+                    <address class="contacts-block__connect-dop contacts-block__address">level 6, 23 ptt st, sydney
+                    </address>
                 </li>
                 <li class="contacts-block__item">
                     <span class="contacts-block__icon icon-phone">
                     </span>
                     <p class="contacts-block__connect">phone</p>
-                    <p class="contacts-block__connect-dop">+7 968999 65 </p>
+                    <a href="tel:88005553535" class="contacts-block__connect-dop contacts-block__phone">8 800 555 35
+                        35</a>
                 </li>
                 <li class="contacts-block__item">
                     <span class="contacts-block__icon icon-mail">
                     </span>
                     <p class="contacts-block__connect">email</p>
-                    <p class="contacts-block__connect-dop">email@mail.com</p>
+                    <address class="contacts-block__connect-dop contacts-block__email">email@mail.com</address>
                 </li>
             </ul>
         </div>
@@ -293,8 +295,6 @@
                 </li>
             </ul>
         </div>
-
-
     </section>
 
     <footer class="footer">

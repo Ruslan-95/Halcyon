@@ -17,6 +17,14 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
 
+.visually_hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .wrapper {
     max-width: 1600px;
     width: 100%;
@@ -75,24 +83,18 @@ h1, h2, h3, h4, h5 {
     color: #ffffff;
     border-radius: 10px;
     border-bottom: 3px solid #309383;
-
+    cursor: pointer;
 }
 
 .menu-block {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    max-width: 1600px;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    position: relative;
+    left: 90%;
+    top: 100px;
+    width: 30px;
 }
 
 .menu-block__hamburger-btn {
     border: none;
-    margin: 100px 100px 0 0;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -280,7 +282,7 @@ h1, h2, h3, h4, h5 {
 .seller-block-2__figure {
     background: url(../svg/loupe.svg) #1abc9c no-repeat center;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 360px;
     height: 200px;
 }
@@ -379,6 +381,7 @@ h1, h2, h3, h4, h5 {
     list-style: none;
     max-width: 1170px;
     margin: 0;
+    height: 700px;
 }
 
 .carousel-item__title {
@@ -447,6 +450,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .team-block__list {
+    padding: 0;
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -595,7 +599,7 @@ h1, h2, h3, h4, h5 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    height: 670px;
+    height: max-content;
     background-color: #f3f5f8;
 }
 
@@ -627,6 +631,7 @@ h1, h2, h3, h4, h5 {
     display: -ms-flexbox;
     display: flex;
     width: 1170px;
+    height: max-content;
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
@@ -682,8 +687,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .contacts-block__connect-dop {
+    min-width: 210px;
+    color: #8C9398;
+    font-style: normal;
     position: absolute;
     margin: 110px 0 0 0;
+}
+
+.contacts-block__address,
+.contacts-block__email {
+    font-style: normal;
 }
 
 .footer-network {
@@ -730,7 +743,7 @@ h1, h2, h3, h4, h5 {
     text-decoration: none;
 }
 
-@media (max-width: 1315px) {
+@media (max-width: 1200px) {
     .iphone-img {
         max-width: 690px;
         height: 100%;
@@ -738,5 +751,100 @@ h1, h2, h3, h4, h5 {
 
     .menu-block__hamburger-svg {
         margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .information-block-1__title,
+    .information-block-2__title,
+    .team-block__title,
+    .contacts__title,
+    .contacts-block__connect {
+        font-size: 25px;
+    }
+
+    .information-block-2__list,
+    .seller-block-2__list,
+    .team-block__list,
+    .contacts-block__list {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: inherit;
+    }
+
+    .advantages-list__item {
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .advantages-list__title,
+    .seller-block-2__title,
+    .team-block__title,
+    .team-block__name {
+        font-size: 25px;
+    }
+
+    .information-block-1__paragraph,
+    .advantages-list__paragraph,
+    .seller-block-2__paragraph,
+    .team-block__about,
+    .seller-block-2__paragraph,
+    .team-block__about,
+    .contacts-block__connect-dop {
+        font-size: 22px;
+    }
+
+    .advantages-list__img {
+        height: 220px;
+        width: 220px;
+        margin: 0 0 15px 0;
+    }
+
+    .seller-block-2 {
+        height: 1200px;
+        margin-bottom: 85px;
+    }
+
+    .seller-block-2__carousel-item {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .team {
+        height: 2000px;
+    }
+
+    .team-block__avatar {
+        height: 265px;
+    }
+
+    .team-block__list {
+        margin-top: 35px;
+    }
+
+    .team-block__name {
+        margin-top: 25px;
+    }
+
+    .team-block__item:not(:last-child) {
+        margin-bottom: 35px;
+    }
+
+    .contacts-block__item {
+        width: 80%;
+        height: 170px;
+    }
+
+    .contacts-block__connect-dop {
+        min-width: 300px;
+    }
+
+    .network__network-list {
+        width: 200px;
+    }
+
+    .network-icon {
+        height: 55px;
+        width: 55px;
     }
 }
