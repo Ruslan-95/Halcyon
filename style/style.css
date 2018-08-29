@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 {
     position: absolute;
     left: 90%;
     top: 100px;
-    width: 30px;
+    max-width: 30px;
 }
 
 .menu-block__hamburger-btn {
@@ -99,7 +99,6 @@ h1, h2, h3, h4, h5 {
 }
 
 .information-block-1 {
-    width: auto;
     padding-top: 100px;
     padding-bottom: 100px;
     display: -webkit-box;
@@ -119,7 +118,7 @@ h1, h2, h3, h4, h5 {
 .information-block-2__title {
     margin: 0 0 30px 0;
     color: #000000;
-    min-width: 750px;
+    max-width: 750px;
     position: relative;
 }
 
@@ -140,7 +139,7 @@ h1, h2, h3, h4, h5 {
     right: 130px;
     top: 50px;
     display: block;
-    width: 155px;
+    max-width: 155px;
     height: 5px;
     background-image: radial-gradient(#bbb 25%, transparent 25%);
     background-size: 6px 6px;
@@ -154,7 +153,7 @@ h1, h2, h3, h4, h5 {
     left: 130px;
     top: 27px;
     display: block;
-    width: 155px;
+    max-width: 155px;
     height: 5px;
     background-image: radial-gradient(#bbb 25%, transparent 25%);
     background-size: 6px 6px;
@@ -163,7 +162,7 @@ h1, h2, h3, h4, h5 {
 
 
 .information-block-1__paragraph {
-    width: 750px;
+    max-width: 750px;
     margin: 65px 0 0 0;
 }
 
@@ -212,7 +211,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .advantages-list__item {
-    width: 360px;
+    max-width: 360px;
     margin: 85px 0 0 0;
 }
 
@@ -239,9 +238,11 @@ h1, h2, h3, h4, h5 {
 }
 
 .carousel-block {
+    margin: 0 auto;
+    display: flex;
     overflow: hidden;
-    width: 758px;
-    height: 700px;
+    max-width: 50%;
+    max-height: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -251,7 +252,6 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
     padding: 0 15px 0 15px;
 }
 
@@ -301,13 +301,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .carousel-block__paragraph {
-    width: 457px;
+    max-width: 457px;
     margin-bottom: 30px;
     text-align: left;
 }
 
 .seller-block-1 {
-    height: 300px;
+    max-height: 300px;
     background-image: url("../img/flouer.jpg");
 }
 
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 660px;
+    max-height: 660px;
 }
 
 .seller-block-2__list {
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5 {
     list-style: none;
     max-width: 1170px;
     margin: 0;
-    height: 700px;
+    max-height: 700px;
 }
 
 .carousel-item__title {
@@ -373,7 +373,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .seller-block-3 {
-    height: 300px;
+    padding: 100px;
+    max-height: 300px;
     background-color: #242830;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -396,7 +397,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .team {
-    height: 880px;
+    max-height: 880px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -410,6 +411,7 @@ h1, h2, h3, h4, h5 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    padding: 200px 0 200px 0;
 }
 
 .team-block {
@@ -437,7 +439,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .team-block__item {
-    width: 375px;
+    max-width: 375px;
     padding: 0 15px 0 15px;
 }
 
@@ -494,6 +496,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .title-line {
+    padding: 15px 0 0 0;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -508,7 +511,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .subscribe {
-    height: 450px;
+    max-height: 450px;
     background-image: url("../img/Layer 226.jpg");
 }
 
@@ -531,7 +534,8 @@ h1, h2, h3, h4, h5 {
 .subscribe__input {
     background: transparent;
     height: 53px;
-    width: 340px;
+    max-width: 340px;
+    min-width: 320px;
     border: 1px solid #ffffff;
     margin-right: 6px;
     padding: 5px 5px 5px 5px;
@@ -591,14 +595,16 @@ h1, h2, h3, h4, h5 {
 
 .contacts-block {
     margin: 90px 0 0 0;
-    max-width: 1170px;
+    min-width: 80%;
     padding: 0 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
 }
 
 .contacts-block__list {
+    flex-grow: 1;
     margin: 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -610,7 +616,7 @@ h1, h2, h3, h4, h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1170px;
+    max-width: 1170px;
     height: max-content;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -631,7 +637,8 @@ h1, h2, h3, h4, h5 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 360px;
+    /*width: 100%;*/
+    flex-grow: 1;
     height: 150px;
     background-color: #ffffff;
 }
@@ -667,7 +674,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .contacts-block__connect-dop {
-    min-width: 210px;
+    max-width: 210px;
     color: #8C9398;
     font-style: normal;
     position: absolute;
@@ -698,7 +705,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .footer {
-    height: 120px;
+    max-height: 120px;
     background-color: #242830;
 }
 
@@ -719,8 +726,7 @@ h1, h2, h3, h4, h5 {
 
 .footer__link {
     color: #a1a9b0;
-    margin: 55px 0 0 0;
-    text-decoration: none;
+    margin: 55px 0 45px 0;
 }
 
 .title-arrow {
@@ -782,7 +788,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .seller-block-2 {
-        height: 1200px;
+        min-height: -webkit-fill-available;
         margin-bottom: 85px;
     }
 
@@ -792,11 +798,11 @@ h1, h2, h3, h4, h5 {
     }
 
     .team {
-        height: 2000px;
+        max-height: 2000px;
     }
 
     .team-block__avatar {
-        height: 265px;
+        max-width: 265px;
     }
 
     .team-block__list {
@@ -812,7 +818,8 @@ h1, h2, h3, h4, h5 {
     }
 
     .contacts-block__item {
-        width: 80%;
+        width: 100%;
+        flex-grow: 1;
         height: 170px;
     }
 
@@ -821,7 +828,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .network__network-list {
-        width: 200px;
+        min-width: 200px;
     }
 
     .network-icon {
