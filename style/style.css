@@ -331,6 +331,7 @@ h1, h2, h3, h4, h5 {
     height: 45px;
     width: 45px;
     border: none;
+    margin: 0 0 55px 0;
 }
 
 .seller-block-1__paragraph-select {
