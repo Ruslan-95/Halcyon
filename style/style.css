@@ -10,6 +10,7 @@ body {
     min-width: 1200px;
     width: auto;
     word-wrap: break-word;
+    /*!*overflow: hidden;*! добавть с помощью js*/
 }
 
 h1, h2, h3, h4, h5 {
@@ -83,20 +84,61 @@ h1, h2, h3, h4, h5 {
     cursor: pointer;
 }
 
-.menu-block {
+
+.menu {
+    display: flex;
     position: absolute;
-    left: 90%;
-    top: 100px;
-    max-width: 30px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
-.menu-block__hamburger-btn {
+.menu--active {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    background: rgba(27,27,27,.8);
+    position: fixed;
+    z-index: 1;
+}
+
+.menu__container {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #242830;
+    z-index: 1;
+}
+
+.navigation {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation__list {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation__item {
+    max-width: 100%;
+}
+
+.navigation__hamburger-btn {
     border: none;
     width: 30px;
     height: 30px;
     cursor: pointer;
-    background: url("../svg/menu.svg");
+    background: url(../svg/menu.svg);
+    position: fixed;
+    top: 100px;
+    right: 5%;
+    max-width: 30px;
 }
+
 
 .information-block-1 {
     padding-top: 100px;
