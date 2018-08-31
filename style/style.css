@@ -247,9 +247,12 @@ h1, h2, h3, h4, h5 {
     right: 21px;
 }
 
+.seller-block-2__paragraph {
+    min-height: 100px;
+}
+
 .advantages-list {
-    max-width: 1140px;
-    width: 100%;
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -400,10 +403,10 @@ h1, h2, h3, h4, h5 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    max-height: 660px;
 }
 
 .seller-block-2__list {
+    padding-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -787,14 +790,39 @@ h1, h2, h3, h4, h5 {
     min-height: 60px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1120px) {
+    .seller-block-2__img,
+    .seller-block-2__figure {
+        max-width: 315px;
+        max-height: 175px;
+    }
+}
 
-    .menu-block__hamburger-svg {
-        margin-right: 0;
+@media (max-width: 1024px) {
+    .seller-block-2__list {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: inherit;
+    }
+
+    .seller-block-2 {
+        min-height: 1300px;
+        margin-bottom: 85px;
+    }
+
+    .seller-block-2__carousel-item {
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 768px) {
+
+    .title-dotes::after,
+    .title-dotes::before {
+        display: none;
+    }
+
     .information-block-1__title,
     .information-block-2__title,
     .team-block__title,
@@ -804,7 +832,6 @@ h1, h2, h3, h4, h5 {
     }
 
     .information-block-2__list,
-    .seller-block-2__list,
     .team-block__list,
     .contacts-block__list {
         flex-direction: column;
@@ -840,15 +867,7 @@ h1, h2, h3, h4, h5 {
         margin: 0 0 15px 0;
     }
 
-    .seller-block-2 {
-        min-height: 1200px;
-        margin-bottom: 85px;
-    }
 
-    .seller-block-2__carousel-item {
-        max-width: 80%;
-        margin-bottom: 20px;
-    }
 
     .team {
         max-height: 2000px;
@@ -887,5 +906,63 @@ h1, h2, h3, h4, h5 {
     .network-icon {
         height: 55px;
         width: 55px;
+    }
+}
+
+@media (max-width: 555px) {
+    .seller-block-2__figure,
+    .seller-block-2__img {
+        width: 240px;
+        height: 170px;
+    }
+
+    .title-dotes {
+        display: none;
+    }
+
+    .iphone-img {
+        display: none;
+    }
+    
+    .information-block-3 {
+
+        background-image: url("../img/iphone.jpg");
+        background-position: right;
+    }
+
+    .carousel-block {
+        background-color: rgba(36, 40, 48, 0.5);
+        color: #ffffff;
+        text-shadow: #000000 ;
+        max-width: 70%;
+    }
+
+    .seller-block-2 {
+        min-height: 1400px;
+        margin-bottom: 85px;
+    }
+
+
+}
+
+@media (max-width: 395px) {
+    .advantages-list__img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .subscribe__input {
+        max-width: 200px;
+        min-width: 180px;
+    }
+
+    .seller-block-2 {
+        min-height: 1500px;
+        margin-bottom: 85px;
+    }
+
+    .menu__container {
+        width: 100%;
+        background: linear-gradient(45deg, rgba(197, 207, 242, 1) 10%, rgba(143, 165, 181, 1) 40%, rgba(54, 70, 74, 1) 100%);
     }
 }
